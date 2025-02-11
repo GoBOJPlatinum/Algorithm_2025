@@ -43,7 +43,7 @@
 ### **알고리즘 스터디 주차별 주제**  
 | 주차  | 주제 |
 |------|--------------------|
-| 1주차  | [구현]() |
+| 1주차  | [구현](https://github.com/GoBOJPlatinum/Algorithm_2025/blob/main/Problems/week1.md) |
 | 2주차  | 정렬 |
 | 3주차  | 이진 탐색 |
 | 4주차  | DFS & BFS |
