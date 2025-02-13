@@ -5,7 +5,8 @@
 
 [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)
 
-[1로 만들기](https://www.acmicpc.net/problem/1463) 
+[크로아티아 알파벳](https://www.acmicpc.net/problem/2941) 
+
 
 ## 백준 골드
 [톱니바퀴](https://www.acmicpc.net/problem/14891)
