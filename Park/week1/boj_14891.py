@@ -10,6 +10,7 @@ for _ in range(K): # K번 회전 명령
     idx, dr = map(int, input().split())
     # 1. idx 톱니를 회전
     tlst = [(idx, 0)]
+    
     # 2. idx 우측 방향 처리(같은 극성 나오면 탈출)
     for i in range(idx+1, N+1):
         # 왼쪽 3시 극성 != 오른쪽 9시 극성 -> 회전후보 추가
