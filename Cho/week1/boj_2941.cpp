@@ -25,4 +25,8 @@ int main()
     }
     cout << word.length();
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 83f11d7eaa30b6af7bfe73d901bbb6024ca6e4c5
