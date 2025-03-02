@@ -1,0 +1,14 @@
+{
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.showSnippets": false,
+  "editor.suggest.showClasses": false,
+  "editor.suggest.showFunctions": false,
+  "editor.suggest.showVariables": false,
+  "editor.suggest.showModules": false,
+  "editor.acceptSuggestionOnEnter": "off"
+}
