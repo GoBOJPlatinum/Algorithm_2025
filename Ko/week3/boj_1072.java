@@ -1,44 +1,37 @@
 package Algorithm_2025.Ko.week3;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
-public class boj_1072 {
-    
-    public static void main(String[] args) throws  IOException {
-    
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
-        
-        String [] t = br.readLine().split(" ");
-        long x = Long.parseLong(t[0]);
-        long y = Long.parseLong(t[1]);
-        
-        long rate = y*100/x;
-        
-        if(rate ==100 || rate ==99) {
+import java.io.*;
+
+public class boj_1072{
+    public static void main(String[] args) throws IOException{
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer sk = new StringTokenizer(bf.readLine());
+
+        long X = Integer.parseInt(sk.nextToken());
+        long Y = Integer.parseInt(sk.nextToken());
+
+        long Pwin = Y*100/X;
+
+        if(Pwin==99||Pwin==100) {
             System.out.println(-1);
             return ;
         }
-        long start = 1;
-        long end = (int)x;
-        
-        // upper_bound
-        while(start<end) {
-            long mid = (start+end)/2;
-            
-            long tmp_x = x+mid;
-            long tmp_y = y+mid;
-            
-            long change_rate = tmp_y*100 /tmp_x;
-            if(change_rate > rate) {
-                end = mid;
-            }
-            else {
-                start = mid+1;
+
+        long left=0;
+        long right=X;
+        long mid = 0;
+        int answer = 0;
+        while(left<=right){
+            mid = (left+right)/2;
+            long NPwin = (Y+mid)*100/(X+mid);
+
+            if(NPwin>Pwin){
+                answer=(int)mid;
+                right=mid-1;
+            }else{
+                left=mid+1;
             }
         }
-        System.out.println(end);
+        System.out.print(answer);
     }
 }
