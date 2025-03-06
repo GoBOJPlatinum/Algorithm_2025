@@ -23,8 +23,6 @@
  * 용사가 공주를 구하기 위한 최대 생명력의 최소값을 구하라!
  * 그렇다면 최대 생명력의 최대값을 몇으로 설정해야할까?
  * 
- * 몬스터 체력의 총합으로 설정하면 되는구나! gpt야 고마워!
- * 
  * 그럼 left = 1, right = 몬스터 체력의 총합! 으로 하자
  * 
  * 이분 탐색 과정을 구상해보자
@@ -81,8 +79,6 @@ public class boj_16434 {
     public static void main(String[] args) throws IOException {
 
             // 용사가 공주를 구하기 위한 최대 생명력의 최고값을 구하라!
-
-
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String[] input = br.readLine().split(" ");
 
@@ -111,7 +107,6 @@ public class boj_16434 {
             // 이분 탐색용 값 설정
             long left = 1;
             long right = (long)1e18;
-            
 
             while(left <= right){
                 // System.out.println("left : " + left + "right : " + right);
@@ -152,6 +147,7 @@ public class boj_16434 {
                 if(hp <= 0){
                     return false;
                 }
+                
             }
             // 아이템이 있는 방일 때
             else if(roomsInfo[i][0] == 2){
