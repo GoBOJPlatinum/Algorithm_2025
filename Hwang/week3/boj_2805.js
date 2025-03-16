@@ -32,3 +32,4 @@ rl.on("line", function (line) {
     console.log(answer);
     rl.close();
 });
+z
