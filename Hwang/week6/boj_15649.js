@@ -1,5 +1,6 @@
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
+
 const N = parseInt(input[0]);
 const M = parseInt(input[1]);
 
@@ -21,4 +22,4 @@ function dfs(path) {
   }
 }
 
-dfs([]);
+
