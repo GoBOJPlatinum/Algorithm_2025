@@ -1,7 +1,8 @@
 const fs = require('fs');
+const { start } = require('repl');
 const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
-const N = +input[0];
+const N = parseInt(input[0]);
 const board = input.slice(1).map(line => line.split(' ').map(Number));
 const visited = Array(N).fill(false);
 
@@ -39,3 +40,11 @@ function dfs(depth, start) {
 
 dfs(0, 0);
 console.log(minDiff);
+
+
+
+
+
+
+
+
